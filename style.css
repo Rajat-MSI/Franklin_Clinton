@@ -4,13 +4,20 @@ body
     background-color: #6998AB;
     font-family: sora;
     color: white;
+    font-weight: normal;
     text-align: center;
 }
 .name
 {
     font-family: 'Sacramento', cursive;
-    font-size: 5.265rem;
+    font-size: 4.265rem;
     margin: 0px;
+    user-select: none;
+    transition: font-size 0.2s;
+}
+.name:hover
+{
+    font-size: 4.285rem;
 }
 h3
 {
@@ -49,9 +56,11 @@ h2
 .work
 {
     font-family: 'Sacramento', cursive;
+    font-weight: normal;
     font-size:3.265rem;
     margin: 0px;
     color:#1A374D;
+    user-select: none;
 }
 .top-container
 {
@@ -86,10 +95,10 @@ h2
 {
     background-color: white;
     padding: 10px;
-    width: 400px;
-    height: 400px;
+    width: 24%;
     border-radius: 160px;
 }
+
 .middle-container
 {
     background-color: white;
@@ -103,11 +112,46 @@ h2
 }
 .skill-pic1
 {
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    float: left;
+    margin-right:30px;
+    transition: width 0.8s;
 }
+.skill-pic1:hover
+{
+    width: 26%;
+}
+
 .skill-pic2
 {
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    float: right;
+    margin-left:40px;
+    transition: width 0.8s;
+}
+.skill-pic2:hover
+{
+    width: 26%;
+}
+p
+{
+    line-height: 2;
+
+}
+.skill-row
+{
+    width: 80%;
+    margin: 50px auto 200px auto;
+    text-align: left;
+    line-height: 2;
+}
+h2
+{
+    font-weight: normal;
+    font-size: 1.625rem;
+}
+h3
+{
+    font-weight: normal;
+    font-size: 1.2rem;
 }
